@@ -1,270 +1,439 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MISCELA-NIA</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">   
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
-    <!-- kit de fontawesome -->
-    <script src="https://kit.fontawesome.com/952509c1de.js" crossorigin="anonymous"></script>
+    <!-- css -->
     <link rel="stylesheet" href="css/style.css">
-
-
+     <!-- iconos de fontawesome -->
+     <script src="https://kit.fontawesome.com/562d327e55.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- Header o encabezado -->
+    <header>
+        <div class="container-menu">
+            <div class="header-superior">
+                <div class="logo">
+                    <a href="#"><img src="imgages/logo" alt=""></a>
+                </div>
+                <!-- menu -->
+                <nav>
+                    <ul>
+                        <li><a href="#" id="selector">Inicio</a></li>
+                        <li><a href="productos.html">Géneros</a>
+                            <!-- submenu -->
+                            <ul>
+                                <li><a href="#papeleria">Papelería</a></li>
+                                <li><a href="#skincare">Skincare</a></li>
+                                <li><a href="#confitería">Confitería</a></li>
+                                <li><a href="#anchetas">Anchetas</a></li>
+                                
 
-    <!-- menu y encabezado -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light p-3 bg-light" id="menu">
+                            </ul>                        
+                        </li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <!-- enlaces de redes sociales -->
+                        <li><a href="https://www.facebook.com/miscelania" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/miscela.nia/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=%2B573113698959&fbclid=IwAR0ukunFr0Jlr26yZ9KtfIQ3MsWPZ3HKTytOvkygth-B5SFJmy7tWHbIajY" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                        
+                    </ul>
+                </nav>
+
+            </div>
+            
+
+        </div>
+    </header>
+
+    <!-- titulo -->
+    <h1 class="title">Novedades</h1>
+
+    <div class="container__slider">
         <div class="container">
-          <a class="navbar-brand" href="index.html">
-            <span class="fs-5 text-primary fw-bold">
-                <img src="images/logo.png" alt="logo" class="logo">
-            </span>            
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Nosotros.html">Nosotros</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Secciones
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="papeleria.html">Papelería</a></li>
-                  <li><a class="dropdown-item" href="skincare.html">Skincare</a></li>
-                  <li><a class="dropdown-item" href="dulcería.html">Dulcería</a></li>
-                  <li><a class="dropdown-item" href="Anchetas.html">Anchetas</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a href="contacto.html" class="nav-link">Contacto</a>
-              </li>
-              <li class="nav-item">
-                <a href="simulador.html" class="nav-link">Simulador</a>
-              </li>
-              <!-- redes -->
-              <li class="nav-item">
-                <a href="#" class="nav-link"><i class="fab fa-facebook"></i></a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link"><i class="fab fa-instagram"></i></a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link"><i class="fab fa-whatsapp"></i></a>
-              </li>
+            <input type="radio" name="slider" id="item-1" checked>
+            <input type="radio" name="slider" id="item-2">
+            <input type="radio" name="slider" id="item-3">
 
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Email" aria-label="Search">
-              <button class="btn btn-outline-dark" type="submit">Suscripción</button>
-            </form>
-          </div>
+            <div class="cards">
+                <label for="item-1" class="card" id="selector-1"><img src="images/ANCHETAS/Ancheta 100.000.jpeg" alt=""></label>
+                <label for="item-2" class="card" id="selector-2"><img src="images/OTROS/Otro caja marcadores doble punta 20.900.jpeg" alt=""></label>
+                <label for="item-3" class="card" id="selector-3"><img src="images/PELUCHES/Peluche leon diego 27.900.jpeg" alt=""></label>
+            </div>
         </div>
-      </nav>
-    
-    <!-- slider -->
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="3000">
-            <img src="Images/Slide 3.jpeg" class="d-block w-100 slideimg" alt="...">
-          </div>
-          <div class="carousel-item" data-bs-interval="3000">
-            <img src="Images/slide 1.jpeg" class="d-block w-100 slideimg" alt="...">
-          </div>
-          <div class="carousel-item" data-bs-interval="3000">
-            <img src="images/Slide 2.jpeg" class="d-block w-100 slideimg" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+    </div>
 
-      <!-- NOVEDADES O NOTICIAS  -->
-      <div class="row row-cols-1 row-cols-md-3 g-4 p-5" id="noticias">
-        <h1 class="titulo">Noticias</h1>
-        <div class="col">
-            <div class="card">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Nuevos peluches</h5>
-                  <p class="card-text">Este mes disfruta promociones en peluches de diferentes clases </p>
-                  <a href="https://wa.me/%2B573207355508" class="btn btn-primary buy" target="_blank">Comprar</a>
+    <!-- call action -->
+    <section class="hero__wrap">
+        <div class="hero__container">
+            <div class="frontpage__hero banner__image">
+                <div class="frontpage__bg-overlay">
+                    <div class="frontpage__bg-layer"></div>                    
                 </div>
-              </div>
+                <!-- los elementos o titulos -->
+                <div class="hero__content">
+                    <div class="hero__elements">
+                        <h1 class="hero__title">
+                            Compra tu artículo favorito
+                        </h1>
+                        <div class="hero__wrapper">
+                         <a href="#nosotros" class="hero__action">
+                            <span class="hero__bottom">
+                                Solicita más información
+                            </span>
+                         </a>
+                         <a href="https://api.whatsapp.com/send?phone=%2B573113698959&fbclid=IwAR0ukunFr0Jlr26yZ9KtfIQ3MsWPZ3HKTytOvkygth-B5SFJmy7tWHbIajY" class="hero__description">
+                            <div class="icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            Contáctenos
+                         </a>
+                        </div>
+                    </div>
 
-        </div>
-
-        <div class="col">
-            <div class="card">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Inserte su nombre</h5>
-                  <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
-                  <a href="https://wa.me/%2B573207355508" class="btn btn-primary buy" target="_blank">Comprar</a>
                 </div>
-              </div>
-
+            </div>
         </div>
-
-        <div class="col">
-            <div class="card">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Inserte su nombre</h5>
-                  <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
-                  <a href="https://wa.me/%2B573207355508" class="btn btn-primary buy" target="_blank">Comprar</a>
-                </div>
-              </div>
-
+        <div class="row-bg-wrap">
+            <div class="shape-divider"></div>
         </div>
-
-      </div>
-
-       <!-- servicios -->
-    <section class="w-100">
-      <div class="row w-75 mx-auto" id="servicios-fila-1">
-        <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
-
-              <!-- imagen de servicio -->
-              <img src="images/Otra miscelania.jpg"
-              class="lasimagenes">
-                <div>
-                  <h3 class="fs-5 mt-4 px-4 pb-1">texto</h3>
-                  <p class="px-4">texto</p>
-                </div>
-
-          </div>
-
-          <!-- <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap"> -->
-
-            <!-- imagen de servicio
-            <img src="images/Otra miscelania.jpg"
-            class="lasimagenes">
-              <div>
-                <h3 class="fs-5 mt-4 px-4 pb-1">texto</h3>
-                <p class="px-4">texto</p>
-              </div> -->
-
-        <!-- </div> -->
-     
-      </div>
     </section>
 
-    <!-- footer con metodologia BEM-->
-   
-        <footer id="page-footer">
-          <div class="footer__cta">
-            <div class="footer__cta-ftcontainer">
-              <div class="cta_txt">
-                <h2>SOLICITUD</h2>
-                <a href="https://wa.me/3042808545?text=Un%20placer%20saludarte%2C%20como%20podemos%20ayudarte" class="cta_btn">
-                  <i class="fab fa-whatsapp"></i></a>
-              </div>            
+    <!-- nosotros -->
+    <section id="nosotros" class="about gray__bg">
+        <div class="section__container">
+            <div class="row">
+                <div class="col__50">
+                    <span class="subtitle">
+                        Nosotros
+                    </span>
+                    <h2>MISCELA-NIA</h2>
+                    <p>
+                      Somos un emprendimiento que nació hace 8 años, creado por una pareja de emprendedores que día a día construyen este sueño llamado Miscelanía. Aquí  nuestros clientes siempre encontrarán el mejor servicio y variedad de productos para regalar o para darse un cariñito, además contamos con la línea de papelería encontrando todo lo necesario para el colegio, universidad y oficina.
+                    </p>
+                    <!-- lista de algunos servicios -->
+                    <div class="sub">
+                        <h4>Algunos servicios</h4>
+                        <ul class="list__style">
+                            <li><i class="fa-solid fa-candy-cane"></i>Confitería</li>
+                            <i class="fa-solid fa-truck-fast"></i>Domicilios</li>
+                            <li><i class="fa-solid fa-credit-card"></i>Pagos en línea</li>
+                            <li><i class="fa-solid fa-gift"></i>2X1</li>
+                        </ul>
+                    </div>
+                </div>
+               
             </div>
-          </div>
-          <div class="ftcontainer">
-            <div class="footer__menu">
-              <figure>
-                <img src="images/Otra miscelania.jpg" alt="" class="footer__logo">
-              </figure>
-              <!-- redes sociales -->
-              <p class="ft-social-row">
-                <a href="#" class="ft-social"><i class="fab fa-facebook"></i></a>
-                <a href="#" class="ft-social"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="ft-social"><i class="fab fa-youtube"></i></a>
-              </p>
-              &copy;2022. Todos los derechos reservados. Creado por Franco Sánchez
-            </div>
-            <div class="footer__menu">
-              <h4 class="footer__title">Horario</h4>
-              <span class="footer__info">
-                Lunes a Viernes: 8am a 5:00pm | Sábados 9:00 am - 5:00 pm
-              </span>
-            </div>
-            <div class="footer__menu">
-              <figure>
-                <img src="images/logo.png" alt="" class="footer__logo">
-              </figure>
-              <p class="ft-social-row">
-                <a href="https://wa.me/3105188168" class="ft-social" target="_blank">
-                  <i class="fab fa-whatsapp"></i>
-                </a>
-                <a href="https://www.facebook.com/" class="ft-social" target="_blank">
-                  <i class="fab fa-facebook"></i>
-                </a>
-                <a href="https://www.instagram.com/" class="ft-social" target="_blank">
-                  <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.youtube.com/" class="ft-social" target="_blank">
-                  <i class="fab fa-youtube"></i>
-                </a>
-              </p>
-            </div>
-            <!-- horarios de atención al publico -->
-            <div class="footer__menu">
-              <h4 class="footer__title">Horario</h4>
-              <span class="footer__info">
-                Lunes a Viernes: 8:00 am a 7:00pm | Sábados: 9:00 am a 5:00pm
-              </span>
-            </div>
-            <!-- mapa del sitio o enlaces -->
-            <div class="footer__menu">
-              <h4 class="footer__title">
-                Mapa del sitio
-              </h4>
-              <ul class="ft-link">
-                <li class="footer__link">
-                  <a href="nosotros.html" target="_blank" class="ft-social">Nosotros</a>
-                </li>
-                <li class="footer__link">
-                  <a href="samsug.html" target="_blank" class="ft-social">Samsug</a>
-                </li>
-                <li class="footer__link">
-                  <a href="condiciones.html" target="_blank" class="ft-social">Términos</a>
-                </li>
-              </ul>
-            </div>
-            <!-- contactos -->
-            <div class="footer__menu">
-              <h4 class="footer__title">Contactos</h4>
-              <p class="footer__info">
-                <i class="fas fa-envelope"></i>
-                Email: aprendesoftware@poliandino.edu.co
-              </p>
-        
-              <p class="footer__info">
-                <i class="fas fa-phone"></i>
-                Teléfono: 6043112325
-              </p>
-        
-              <p class="footer__info">
-                <i class="fas fa-map-marker-alt"></i>
-                Dirección: Carrera 52 N 85-20
-              </p>
-            </div>
-          </div>
-        </footer>
+        </div>
+    </section>
 
-      
+    <!-- Sección de productos -->
+    <section id="nacionales" class="links__main">
+        <div class="section__container">
+            <div class="frontpage__links-wrapper">
+                <span class="subtitle">
+                    Productos
+                </span>
+                <h2 class="links-title">
+                    Nuestros productos mas relevantes
+                </h2>
+                <p class="links__desc">
+                    Contamos con domicilios de todos nuestros servicios y servicio personalizado de anchetas. 
+                </p>
+            </div>
+            <div class="frontpage__links">
+                <a href="https://www.facebook.com/profile.php?id=100009178045772" class="frontpage__links-item">
+                    <div class="frontpage__links-icon">
+                        <img src="https://scontent.feoh5-1.fna.fbcdn.net/v/t1.18169-9/13879462_1642706339378618_8840914303128214690_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeFVu8ANdIKpOTQNzBf09diUySD3iIwnPtrJIPeIjCc-2hj1-GD1LfUVCOFYzgFaiBs&_nc_ohc=yRRT90FoUEMAX9ZXqlg&_nc_ht=scontent.feoh5-1.fna&oh=00_AfA4WWB8ziWQXH0NZIoXrdxD4SIOtQ7txwrbLKEWBLpN6Q&oe=64FA267E" alt="">
+                    </div>
+                    <span class="frontpage__links-title">
+                        Nuevas Colecciones de todos nuestros productos.
+                    </span>
+                    <b>
+                      <br>
+                      <br>
+                    <span class="frontpage__links-description">
+                        Encuentra lo mejor de todas nuestros productos en skin care, peluches, confitería y anchetas.
+                    </span>
+                  </b>
+                </a>
+
+                
+            </div>
+        </div>
+    </section>
+  <!-- películas internacionales -->
+  <section class="movies__main" id="internacional">
+    <div class="frontpage__links-wrapper">
+        <span class="subtitle">
+            Nuevas colecciones
+        </span>
+        <h2 class="links-title">
+            Conoce las nuevas colecciones de MISCELA-NIA
+        </h2>
+        <p class="links-desc">
+            Encuentra tu producto favorito y solicita tu domicilio
+        </p>
+        
+    </div>
+    <!-- box para las movies -->
+    <div class="movies">
+        <div class="movie__internacional">
+            <div class="movie__internacional-image">
+                <a href="https://scontent.feoh5-1.fna.fbcdn.net/v/t31.18172-8/12716272_1559020947747158_3134191516800325973_o.jpg?_nc_cat=110&ccb=1-7&_nc_sid=cdbe9c&_nc_eui2=AeFn0eYuKdfxHBUhtpc6Ep9TTG1vUZWFRxpMbW9RlYVHGg5c6gweftiYu38N0fCHAXk&_nc_ohc=s2AD4o-vYBkAX9L7lPt&_nc_ht=scontent.feoh5-1.fna&oh=00_AfDZeqsJA6tuG57DAFE03XCQnpz4r_zIsRdnB90d32xPbA&oe=64FA1B55" target="_blank">
+                    <img src="https://scontent.feoh5-1.fna.fbcdn.net/v/t31.18172-8/12716272_1559020947747158_3134191516800325973_o.jpg?_nc_cat=110&ccb=1-7&_nc_sid=cdbe9c&_nc_eui2=AeFn0eYuKdfxHBUhtpc6Ep9TTG1vUZWFRxpMbW9RlYVHGg5c6gweftiYu38N0fCHAXk&_nc_ohc=s2AD4o-vYBkAX9L7lPt&_nc_ht=scontent.feoh5-1.fna&oh=00_AfDZeqsJA6tuG57DAFE03XCQnpz4r_zIsRdnB90d32xPbA&oe=64FA1B55" alt="">
+                </a>
+            </div>
+            <!-- titulo de la película -->
+            <div class="nameMovie">
+                <h3>Anchetas</h3>
+            </div>
+            <!--descripción-->
+            <p>
+                Encuentra tu ancheta para todo tipo de ocación o personalizala tu mismo.
+            </p>
+            <div class="stars">
+                <span>Encuentra Anchetas de cumpleaños, día del padre, día de la madre, grados, entre otras.</span>
+            
+            </div>
+            <!--botón para la compra-->
+            <div class="bay"><a href="https://api.whatsapp.com/send?phone=%2B573113698959&fbclid=IwAR0ukunFr0Jlr26yZ9KtfIQ3MsWPZ3HKTytOvkygth-B5SFJmy7tWHbIajY"target="_blank"  class="button">Comprar
+            
+            </a>
+        </div>
+
+            </div>
+        <div class="movie__internacional">
+            <div class="movie__internacional-image">
+                <a href="https://scontent.feoh5-1.fna.fbcdn.net/v/t1.18169-9/11041157_1442959112686676_4024795162217497223_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=cdbe9c&_nc_eui2=AeF8hBrbgznBoCMGR8TnsLIhICKjRtxD2q8gIqNG3EPar2cn4Gvj1H_GFOUe5rYtcJ8&_nc_ohc=SlYr38TDOdUAX8oK8Yg&_nc_ht=scontent.feoh5-1.fna&oh=00_AfCFRKBLm8YOZr5ka381Ku9DLC8wrqo1SMxCmQlQ0VNjcg&oe=64FA0D52" target="_blank">
+                    <img src="https://scontent.feoh5-1.fna.fbcdn.net/v/t1.18169-9/11041157_1442959112686676_4024795162217497223_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=cdbe9c&_nc_eui2=AeF8hBrbgznBoCMGR8TnsLIhICKjRtxD2q8gIqNG3EPar2cn4Gvj1H_GFOUe5rYtcJ8&_nc_ohc=SlYr38TDOdUAX8oK8Yg&_nc_ht=scontent.feoh5-1.fna&oh=00_AfCFRKBLm8YOZr5ka381Ku9DLC8wrqo1SMxCmQlQ0VNjcg&oe=64FA0D52" alt="">
+                </a>
+            </div>
+            <!-- titulo de la película -->
+            <div class="nameMovie">
+                <h3>Aretes, collares y pulseras</h3>
+            </div>
+            <!--descripción-->
+            <p>
+                Descubre nuestra gran variedad en accesorios para tu cuerpo 
+            </p>
+            <div class="stars">
+                <span>Encuentra los mejores collares, aretes y pulseras al mejor precio para que te veas cada día mas hermosa</span>
+          
+            </div>
+            <!--botón para la compra-->
+            <div class="bay"><a href="https://api.whatsapp.com/send?phone=%2B573113698959&fbclid=IwAR0ukunFr0Jlr26yZ9KtfIQ3MsWPZ3HKTytOvkygth-B5SFJmy7tWHbIajY"target="_blank"  class="button">Comprar
+            
+            </a>
+        </div>
+
+            </div>
+        <div class="movie__internacional">
+            <div class="movie__internacional-image">
+                <a href="https://scontent.feoh5-1.fna.fbcdn.net/v/t1.18169-9/11899780_1486221691693751_3338947736007692249_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=cdbe9c&_nc_eui2=AeH3bGFgCl-_xiJTI38Rj3RamywWDYb2zbObLBYNhvbNs2zsoFxCkpikj8m5KgWIT38&_nc_ohc=hSEJL6nkZysAX-wuf4n&_nc_ht=scontent.feoh5-1.fna&oh=00_AfB-Ngm4drdla34WNG5N_XF6E1_TuJKSbJ2ZloIL9baX6Q&oe=64FA008E" target="_blank">
+                    <img src="https://scontent.feoh5-1.fna.fbcdn.net/v/t1.18169-9/11899780_1486221691693751_3338947736007692249_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=cdbe9c&_nc_eui2=AeH3bGFgCl-_xiJTI38Rj3RamywWDYb2zbObLBYNhvbNs2zsoFxCkpikj8m5KgWIT38&_nc_ohc=hSEJL6nkZysAX-wuf4n&_nc_ht=scontent.feoh5-1.fna&oh=00_AfB-Ngm4drdla34WNG5N_XF6E1_TuJKSbJ2ZloIL9baX6Q&oe=64FA008E" alt="">
+                </a>
+            </div>
+            <!-- titulo de la película -->
+            <div class="nameMovie">
+                <h3>Peluches</h3>
+            </div>
+            <!--descripción-->
+            <p>
+                Descubre la mejor variedad de peluches
+            </p>
+            <div class="stars">
+                <span>Encuentra peluches en sus diferentes tamaños y estilos</span>
+            
+            </div>
+            <!--botón para la compra-->
+            <div class="bay"><a href="https://api.whatsapp.com/send?phone=%2B573113698959&fbclid=IwAR0ukunFr0Jlr26yZ9KtfIQ3MsWPZ3HKTytOvkygth-B5SFJmy7tWHbIajY"target="_blank"  class="button">Comprar
+            
+            </a>
+        </div>
+
+            </div>
+        <div class="movie__internacional">
+            <div class="movie__internacional-image">
+                <a href="https://www.instagram.com/reel/CnGLp5EjvF8/" target="_blank">
+                    <img src="images/OTROS/Otro kid escolar 12.000.jpeg" alt="">
+                </a>
+            </div>
+            <!-- titulo de la película -->
+            <div class="nameMovie">
+                <h3>Papelería</h3>
+            </div>
+            <!--descripción-->
+            <p>
+               Decubre lo mejor en papelería 
+            </p>
+            <div class="stars">
+                <span>Encuentra los mejores kit escolares, marcadores, colores, fotocopias, impresiones y mas en nuestra MISCELA-NIA.</span>
+            
+            </div>
+            <!--botón para la compra-->
+            <div class="bay"><a href="https://api.whatsapp.com/send?phone=%2B573113698959&fbclid=IwAR0ukunFr0Jlr26yZ9KtfIQ3MsWPZ3HKTytOvkygth-B5SFJmy7tWHbIajY"target="_blank"  class="button">Comprar
+            
+            </a>
+        </div>
+
+            </div>
+        <div class="movie__internacional">
+            <div class="movie__internacional-image">
+                <a href="https://www.instagram.com/p/CtT_rKyM2vw/" target="_blank">
+                    <img src="images/Slide 2.jpeg" alt="">
+                </a>
+            </div>
+            <!-- titulo de la película -->
+            <div class="nameMovie">
+                <h3>Skincare</h3>
+            </div>
+            <!--descripción-->
+            <p>
+                Descubre lo mejor para el cuidado de tu piel
+            </p>
+            <div class="stars">
+                <span>Encuentra el mejor maquillaje y los mejores productos para tener una piel hermosa y radiante</span>
+            
+            <!--botón para la compra-->
+            <div class="bay"><a href="https://api.whatsapp.com/send?phone=%2B573113698959&fbclid=IwAR0ukunFr0Jlr26yZ9KtfIQ3MsWPZ3HKTytOvkygth-B5SFJmy7tWHbIajY"target="_blank"  class="button">Comprar
+            
+            </a>
+        </div>
+
+            </div>
+        <div class="movie__internacional">
+            <div class="movie__internacional-image">
+                <a href="https://www.instagram.com/reel/CdOrVwWgk3p/" target="_blank">
+                    <img src="images/ANCHETAS/Ancheta 65.000.jpeg" alt="">
+                </a>
+            </div>
+            <!-- titulo de la película -->
+            <div class="nameMovie">
+                <h3>Confitería</h3>
+            </div>
+            <!--descripción-->
+            <p>
+               Decubre la mejor confitería para decorar tus anchetas
+            </p>
+            <div class="stars">
+                <span>Personaliza tu ancheta y encuentra una gran variedad de dulces para que decores y disfrutes de los ricos y exóticos sabores que ofrece la MISCELA-NIA.</span>
+            
+            </div>
+            <!--botón para la compra-->
+            <div class="bay"><a href="https://api.whatsapp.com/send?phone=%2B573113698959&fbclid=IwAR0ukunFr0Jlr26yZ9KtfIQ3MsWPZ3HKTytOvkygth-B5SFJmy7tWHbIajY"target="_blank"  class="button">Comprar
+            
+            </a>
+        </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- otros servicios -->
+    <div class="cta__main">
+        <div class="frontpage__cta-wrapper">
+            <h2 class="frontpage__cta-title">
+                Encuentra tu producto favorito y pidelo a domicilio.
+            </h2>
+            <a href="https://wa.me/3105188168?text=Atenci%C3%B3n%20al%20cliente" class="frontpage__cta-action">
+                <span class="frontpage__cta-bottom">
+                    Solicitar más información
+                </span>
+            </a>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer id="page-footer">
+        <div class="footer__cta">
+            <div class="footer__cta-container">
+                <h2 class="cta__txt">
+                    Estamos aquí para ayudar
+                </h2>
+                <div class="cta__row">
+                    <a href="https://wa.me/3105188168?text=Atenci%C3%B3n%20al%20cliente" class="cta__btn">
+                    <i class="fa-brands fa-whatsapp"></i>Chat
+                </a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer__menu">
+                <figure>
+                    <img src="/img/logo.png" alt="" class="footer__logo">
+                </figure>
+                <p class="ft-social-row">
+                    <a href="https://www.facebook.com/" target="_blank" class="ft-social"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" class="ft-social"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank" class="ft-social"><i class="fa-brands fa-youtube"></i></a>
+                </p>
+            </div>
+            <div class="footer__menu">
+                <h4 class="footer__title">
+                    Horario en Medellín
+                </h4>
+                <span class="footer__info">
+                    Lunes a viernes: 10:00 am - 23:00 pm | Sábados - Domingos y Festivos 11:00 am - 23:00 pm.
+                </span>
+
+                <h4 class="footer__title">
+                    Horario en Bogotá
+                </h4>
+                <span class="footer__info">
+                    Lunes a viernes: 10:00 am - 23:00 pm | Sábados - Domingos y Festivos 11:00 am - 23:00 pm.
+                </span>
+            </div>
+
+            <div class="footer__menu">
+                <h4 class="footer__title">
+                    Enlaces
+                </h4>
+                <ul class="ft-link">
+                    <li class="footer__link">
+                        <a href="terminos.html" target="_blank">
+                            Términos y condiciones
+                        </a>
+                    </li>
+                    <li class="footer__link">
+                        <a href="politica.html" target="_blank">
+                            Política de privacidad
+                        </a>
+                    </li>
+                    <li class="footer__link">
+                        <a href="trabajo.html" target="_blank">
+                            Trabaja con nosotros
+                        </a>
+                    </li>
+                </ul>                
+            </div>
+            <div class="footer__menu">
+                <h4 class="footer__title">Contacto</h4>
+                <p class="footer__info">
+                    <i class="fas fa-envelope"></i>
+                    Email: info@movie.com
+                </p>
+                <p class="footer__info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Dirección: Calle 52 # 12 -36
+                </p>
+                <p class="footer__info">
+                    <i class="fas fa-mobile"></i>
+                    Celular: +573105188168
+                </p>
+
+            </div>
+
+
+        </div>
+    </footer>
+
+
+
     
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+ 
+    
 </body>
 </html>
