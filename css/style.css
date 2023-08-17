@@ -1057,10 +1057,14 @@ img{
         margin-top: 0px;
 
     }
-    #page-footer{
+    #page-footer .container, .footer__info, .footer__menu,
+     .footer__link, .footer__title, a{
         background:var(--colorFooter);
         color: #fff;
+        width: 100%;
+        
     }
+
 
    
 
