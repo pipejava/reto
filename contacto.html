@@ -1,173 +1,185 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MISCELA-NIA</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
-    <!-- kit de fontawesome -->
-    <script src="https://kit.fontawesome.com/952509c1de.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
-
-
+     <!-- iconos de fontawesome -->
+     <script src="https://kit.fontawesome.com/562d327e55.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- Header o encabezado -->
+    <header>
+        <div class="container-menu">
+            <div class="header-superior">
+                <div class="logo">
+                    <a href="#"><img src="images/logo.png" alt=""></a>
+                </div>
+                <!-- menu -->
+                <nav>
+                    <ul>
+                        <li><a href="index.html" id="selector">Inicio</a></li>
+                        <li><a href="productos.html">Secciones</a>
+                            <!-- submenu -->
+                            <ul>
+                                <li><a href="papeleria.html">Papelería</a></li>
+                                <li><a href="skincare.html">Skincare</a></li>
+                                <li><a href="confitería.html">Confitería</a></li>
+                                <li><a href="anchetas.html">Anchetas</a></li>
+                                
 
-    <!-- menu y encabezado -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light p-3 bg-light" id="menu">
-        <div class="container">
-          <a class="navbar-brand" href="index.html">
-            <span class="fs-5 text-primary fw-bold">
-                <img src="images/logo.png" alt="logo" class="logo">
-            </span>            
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Nosotros.html">Nosotros</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Secciones
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="papeleria.html">Papelería</a></li>
-                  <li><a class="dropdown-item" href="skincare.html">Skincare</a></li>
-                  <li><a class="dropdown-item" href="dulcería.html">Dulcería</a></li>
-                  <li><a class="dropdown-item" href="Anchetas.html">Anchetas</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a href="contacto.html" class="nav-link">Contacto</a>
-              </li>
-              <!-- redes -->
-              <li class="nav-item">
-                <a href="#" class="nav-link"><i class="fab fa-facebook"></i></a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link"><i class="fab fa-instagram"></i></a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link"><i class="fab fa-whatsapp"></i></a>
-              </li>
+                            </ul>                        
+                        </li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <!-- enlaces de redes sociales -->
+                        <li><a href="https://www.facebook.com/miscelania" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/miscela.nia/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=%2B573113698959&fbclid=IwAR0ukunFr0Jlr26yZ9KtfIQ3MsWPZ3HKTytOvkygth-B5SFJmy7tWHbIajY" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                        
+                    </ul>
+                </nav>
 
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Email" aria-label="Search">
-              <button class="btn btn-outline-dark" type="submit">Suscripción</button>
-            </form>
-          </div>
+            </div>
+            
+
         </div>
-      </nav>
+    </header>
+
+   <!-- CONTACTO -->
+   <section id="contacto">
+    <h2>Contacto</h2>
+    <form action="mailto:miscela-nia@hotmail.com" method="post">
+    <div>
+        <!-- INPUT O CAJA DE TEXTO -->
+        <input type="text" placeholder="Escriba su nombre" required >
+    </div>
+    <div><input type="text" placeholder="Escriba su correo" required ></div>
     
-    <!-- slider -->
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="3000">
-            <img src="Images/Slide 3.jpeg" class="d-block w-100 slideimg" alt="...">
-          </div>
-          <div class="carousel-item" data-bs-interval="3000">
-            <img src="Images/slide 1.jpeg" class="d-block w-100 slideimg" alt="...">
-          </div>
-          <div class="carousel-item" data-bs-interval="3000">
-            <img src="images/Slide 2.jpeg" class="d-block w-100 slideimg" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+   <div><input type="text" placeholder="Escriba su asunto" required ></div> 
 
-      <!-- NOVEDADES O NOTICIAS  -->
-      <div class="row row-cols-1 row-cols-md-3 g-4 p-5" id="contacto">
-        <h1 class="titulo">Contacto</h1>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe-E9KtNa4y-kQHeLON7xy97bJIjyNQGV9Z0uO12N6zGzUW3w/viewform?embedded=true" width="640" height="978" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+   <div>
 
-      </div>
+    <!-- SELECT O MENÚ -->
+    <select name="Ciudad" id="">
+    <option value="Seleccionar"> Ciudad </option>
+    <option value="Cali"> Cali</option>
+    <option value="Ibague">Ibague</option>
+    <option value="Medellín">Medellín</option>
+    <option value="Montería">Montería</option>
+    <option value="Montería">Bucaramanga</option>
+</select>
+</div>
 
-      
 
-    <!-- footer con metodologia BEM-->
+
+<div>
+    <!-- TEXTAREA -->
+    <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+</div>
+
+<div>
+    <!-- BOTONES DE ENVIAR Y BORRAR -->
+    <button type="" class="btn btn-primary">ENVIAR</button >
+    <button type="reset" class="btn btn-danger">BORRAR</button>
+</div>
+</form>
+</section>
    
-        <footer id="page-footer">
-          <div class="footer__cta">
-            <div class="footer__cta-ftcontainer">
-              <div class="cta_txt">
-                <h2>SOLICITUD</h2>
-                <a href="https://wa.me/3042808545?text=Un%20placer%20saludarte%2C%20como%20podemos%20ayudarte" class="cta_btn">
-                  <i class="fab fa-whatsapp"></i></a>
-              </div>            
+
+    <!-- footer -->
+    <footer id="page-footer">
+        <div class="footer__cta">
+            <div class="footer__cta-container">
+                <h2 class="cta__txt">
+                    Estamos aquí para ayudar
+                </h2>
+                <div class="cta__row">
+                    <a href="https://wa.me/3105188168?text=Atenci%C3%B3n%20al%20cliente" class="cta__btn">
+                    <i class="fa-brands fa-whatsapp"></i>Chat
+                </a>
+                </div>
             </div>
-          </div>
-          <div class="ftcontainer">
+        </div>
+        <div class="container">
             <div class="footer__menu">
-              <figure>
-                <img src="images/Otra miscelania.jpg" alt="" class="footer__logo">
-              </figure>
-              <!-- redes sociales -->
-              <p class="ft-social-row">
-                <a href="#" class="ft-social"><i class="fab fa-facebook"></i></a>
-                <a href="#" class="ft-social"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="ft-social"><i class="fab fa-youtube"></i></a>
-              </p>
-              &copy;2022. Todos los derechos reservados. Creado por Franco Sánchez
-            </div>
-            <div class="footer__menu">
-              <h4 class="footer__title">Horario</h4>
-              <span class="footer__info">
-                Lunes a Viernes: 8am a 5:00pm | Sábados 9:00 am - 5:00 pm
-              </span>
+                <figure>
+                    <img src="images/logo.png" alt="" class="footer__logo">
+                </figure>
+                <p class="ft-social-row">
+                    <a href="https://www.facebook.com/profile.php?id=100009178045772" target="_blank" class="ft-social"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/miscela.nia/" target="_blank" class="ft-social"><i class="fa-brands fa-instagram"></i></a>
+                    
+                </p>
             </div>
             <div class="footer__menu">
-              <h4 class="footer__title">Enlaces</h4>
-              <ul class="ft-link">
-                <li class="footer__link">
-                  <a href="nosotros.html" target="_blank"></a>
-                </li>
-                <li class="footer__link">
-                  <a href="lg.html" target="_blank"></a>
-                </li>
-                <li class="footer__link">
-                  <a href="samsug.html" target="_blank"></a>
-                </li>
-              </ul>
+                <h4 class="footer__title">
+                    Horario en Medellín
+                </h4>
+                <span class="footer__info">
+                    Lunes a viernes: 9:00 am - 21:00 pm | Sábados - Domingos y Festivos 10:00 am - 14:00 pm.
+                </span>
+
+                <h4 class="footer__title">
+                    Horarios de Domicilios
+                </h4>
+                <span class="footer__info">
+                    Lunes a viernes: 10:00 am - 19:00 pm | Sábados - Domingos y Festivos 11:00 am - 13:00 pm.
+                </span>
+            </div>
+
+            <div class="footer__menu">
+                <h4 class="c">
+                    Enlaces
+                </h4>
+                <ul class="ft-link">
+                    <li class="footer__link">
+                        <a href="terminos.html" target="_blank">
+                            Términos y condiciones
+                        </a>
+                    </li>
+                    <li class="footer__link">
+                        <a href="politica.html" target="_blank">
+                            Política de privacidad
+                        </a>
+                    </li>
+                    <li class="footer__link">
+                        <a href="trabajo.html" target="_blank">
+                            Trabaja con nosotros
+                        </a>
+                    </li>
+                </ul>                
             </div>
             <div class="footer__menu">
-              <h4 class="footer__title">Contactos</h4>
-              <p class="footer__info">
-                <i class="fas fa-envelope"></i>
-                Email: fsaulspuche@gmail.com
-              </p>
-              <p class="footer__info">
-                <i class="fas fa-map-marker-alt"></i>
-                Dirección: Calle 101 N 57-20.
-              </p>
-              <p class="footer__info">
-                <i class="fas fa-phone"></i>
-                Teléfono: 6043112542.
-              </p>           
+                <h4 class="footer__title">Contacto</h4>
+                <p class="footer__info">
+                    <i class="fas fa-envelope"></i>
+                    Email: miscela-nia@hotmail.com.
+                </p>
+                <p class="footer__info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Dirección: Cra 55# 1A-04
+                </p>
+                <p class="footer__info">
+                    <i class="fas fa-mobile"></i>
+                    Celular: 3113698959-3207355508
+                </p>
+
             </div>
-          </div>
-        </footer>
 
 
-      
+        </div>
+    </footer>
+
+
+
     
-
+ 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 </body>
